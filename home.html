@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>Social Media App</h3>
+    <div class="profile">
+        <img src="https://i.ibb.co/7WBNNmg/user.png">
+        <span id="profileName"></span>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="post-box">
+        <textarea id="postText" placeholder="Write something..."></textarea>
+        <input type="file" id="postImage">
+        <button onclick="addPost()">Post</button>
+    </div>
+
+    <h3>Recent Posts</h3>
+    <div id="posts"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
