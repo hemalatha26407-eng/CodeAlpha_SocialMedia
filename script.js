@@ -1,11 +1,13 @@
 function addPost() {
-    let text = document.getElementById("postInput").value;
+    let input = document.getElementById("postInput");
+    let text = input.value.trim();
+
     if (text === "") return;
 
+    let list = document.getElementById("postList");
     let li = document.createElement("li");
-    li.innerText = text;
+    li.textContent = text;
 
-    document.getElementById("postsList").appendChild(li);
-
-    document.getElementById("postInput").value = "";
+    list.appendChild(li);
+    input.value = "";
 }
