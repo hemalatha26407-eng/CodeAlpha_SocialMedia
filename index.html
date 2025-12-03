@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Social Media App</title>
+    <title>Social Media - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h2>Social Media App</h2>
+<div class="login-container">
+    <h2>Welcome</h2>
 
-        <div class="post-box">
-            <textarea id="postInput" placeholder="Write something..."></textarea>
-            <button onclick="addPost()">Post</button>
-        </div>
+    <div id="loginBox">
+        <input id="loginUser" type="text" placeholder="Username">
+        <input id="loginPass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
 
-        <h3>Recent Posts</h3>
-        <div id="postList" class="posts"></div>
+        <p>Don't have an account? 
+            <a href="#" onclick="showSignup()">Signup</a>
+        </p>
     </div>
 
-    <script src="script.js"></script>
+    <div id="signupBox" style="display:none;">
+        <input id="signupUser" type="text" placeholder="Create Username">
+        <input id="signupPass" type="password" placeholder="Create Password">
+        <button onclick="signup()">Create Account</button>
+
+        <p>Already have an account? 
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
