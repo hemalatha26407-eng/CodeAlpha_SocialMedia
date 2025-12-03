@@ -1,92 +1,13 @@
 body {
-    margin: 0;
     font-family: Arial;
-    background: #ececec;
-}
-
-/* LOGIN / SIGNUP */
-.login-container {
-    width: 350px;
-    margin: 70px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 20px;
 }
 
 input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 5px;
 }
 
 button {
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    border: none;
+    padding: 6px 10px;
     cursor: pointer;
-}
-
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background: white;
-    box-shadow: 0 2px 5px #ccc;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile img {
-    width: 35px;
-    margin-right: 10px;
-}
-
-/* POST AREA */
-.container {
-    width: 600px;
-    margin: 20px auto;
-}
-
-.post-box {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-textarea {
-    width: 100%;
-    height: 70px;
-    padding: 10px;
-}
-
-/* POSTS */
-.post {
-    background: white;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 10px;
-}
-
-.post img {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.like-btn {
-    margin-top: 10px;
-    cursor: pointer;
-    color: blue;
-}
-
-.delete-btn {
-    color: red;
-    cursor: pointer;
-    float: right;
 }
